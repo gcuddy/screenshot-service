@@ -6,6 +6,9 @@
     "@biomejs/biome": "1.4.1",
     "bun-types": "latest"
   },
+  "script": {
+    "start": "bun run index.ts"
+  },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
