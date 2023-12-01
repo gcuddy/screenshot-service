@@ -1,0 +1,17 @@
+{
+  "name": "screenshot-service",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "1.4.1",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@sparticuz/chromium": "^119.0.0",
+    "puppeteer": "^21.5.2",
+    "puppeteer-core": "^21.5.2"
+  }
+}
