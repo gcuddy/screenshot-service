@@ -54,15 +54,16 @@ async function take_screenshot(url: string, width = 1829, height = 1829) {
   //     ignoreHTTPSErrors: true,
   //   }
   const browser = await puppeteer.launch({
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
     headless: "new",
     defaultViewport: {
-        width,
-        height,
-        deviceScaleFactor: 1.4
-        // 1.4 * x = 2560
-        // x = 2560 / 1.4
-        // x = 1828.5714285714287
-    }
+      width,
+      height,
+      deviceScaleFactor: 1.4,
+      // 1.4 * x = 2560
+      // x = 2560 / 1.4
+      // x = 1828.5714285714287
+    },
   });
 
   const page = await browser.newPage();
